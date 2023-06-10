@@ -16,9 +16,6 @@ firebase.initializeApp({
 const messaging = firebase.messaging();
 messaging.usePublicVapidKey('BNkCLYgkZRUGROlTcfsvsMt07WXZ24HVhobmv3ia9ZuauC56QOT5oHRvbvniSuD5pKoTYOSmVv0Ov5h2IGSan9k');
 
-messaging.getToken().then((currentToken) => {
-    console.log("firebase token is", currentToken)
-})
 messaging.onBackgroundMessage((message) => {
   console.log("onBackgroundMessage", message);
   console.log("title", message.notification.title);
