@@ -34,31 +34,28 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '2709803247';
+    var serviceWorkerVersion = '3051356829';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
 <body>
-<div id="loading"></div>
+<div id="loading">
+  <center><img src="assets/assets/kanoon_icon.png" alt="centered image"> </center>
+</div>
 <!--    <script src="main.dart.js" type="application/javascript"></script>-->
   <script>
+    window.flutterConfiguration = {
+      canvasKitBaseUrl: "canvaskit/"
+    };
     window.addEventListener('load', function(ev) {
-        window.flutterConfiguration = {
-          canvasKitBaseUrl: "canvaskit/"
-        };
-        var loading = document.querySelector('#loading');
-        loading.textContent = "در حال بارگزاری...";
         _flutter.loader.loadEntrypoint({
           serviceWorker: {
             serviceWorkerVersion: serviceWorkerVersion,
             serviceWorkerUrl: "flutter_service_worker.js?v="+serviceWorkerVersion,
           },
           onEntrypointLoaded: async function(engineInitializer) {
-            loading.textContent = "در حال نصب...";
             let appRunner = await engineInitializer.initializeEngine();
-
-            loading.textContent = "در حال اجرای برنامه...";
             await appRunner.runApp();
           }
         });
