@@ -34,15 +34,47 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '1143771987';
+    var serviceWorkerVersion = "3231078016";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
+  <style>
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+div {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+</style>
 </head>
 <body>
-<div style="display: flex;justify-content: center;align-items: center;text-align: center;min-height: 100vh;">
-  <img src="assets/assets/kanoon_icon.png" alt="kanoon logo" style="display: block; margin: auto;">
-</div>
+<div class="loader"></div>
 <!--    <script src="main.dart.js" type="application/javascript"></script>-->
   <script>
     window.flutterConfiguration = {
