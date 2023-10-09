@@ -34,7 +34,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "1086377996";
+    const serviceWorkerVersion = "106089589";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -78,7 +78,25 @@ div {
 <script src="main.dart.js" type="application/javascript"></script>
 <div class="loader"></div>
 <!--    <script src="main.dart.js" type="application/javascript"></script>-->
-  <script>
+
+<script>
+       if ('serviceWorker' in navigator) {
+          // Service workers are supported. Use them.
+          window.addEventListener('load', function () {
+            // ADD THIS LINE
+            navigator.serviceWorker.register('/firebase-messaging-sw.js');
+
+            // Wait for registration to finish before dropping the <script> tag.
+            // Otherwise, the browser will load the script multiple times,
+            // potentially different versions.
+            // var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
+
+            //  ...
+          });
+      }
+  </script>
+
+<script>
     window.flutterConfiguration = {
       canvasKitBaseUrl: "canvaskit/"
     };
@@ -96,21 +114,6 @@ div {
         });
       });
   </script>
-    <script>
-       if ('serviceWorker' in navigator) {
-          // Service workers are supported. Use them.
-          window.addEventListener('load', function () {
-            // ADD THIS LINE
-            navigator.serviceWorker.register('firebase-messaging-sw.js');
 
-            // Wait for registration to finish before dropping the <script> tag.
-            // Otherwise, the browser will load the script multiple times,
-            // potentially different versions.
-            // var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
-
-            //  ...
-          });
-      }
-  </script>
 </body>
 </html>

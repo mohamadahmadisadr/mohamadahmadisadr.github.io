@@ -1,6 +1,7 @@
 importScripts("https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js");
 importScripts("https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js");
 
+
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 firebase.initializeApp({
                          apiKey: "AIzaSyD6dz46y3hvIdUm8cjmAJSR088sNB1rxU8",
