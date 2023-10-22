@@ -1,119 +1,134 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+    <!--
+      If you are serving your web app in a path other than the root, change the
+      href value below to reflect the base path you are serving from.
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+      The path provided below has to start and end with a slash "/" in order for
+      it to work correctly.
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+      For more details:
+      * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
+      This is a placeholder for base href that will be replaced by the value of
+      the `--base-href` argument provided to `flutter build`.
+    -->
+    <base href="/">
 
-  <base href="/">
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="اپلیکیشن کانونی ها" content="اپلیکیشن کانونی ها">
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="اپلیکیشن کانونی ها" content="اپلیکیشن کانونی ها">
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="اپلیکیشن کانونی ها">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="اپلیکیشن کانونی ها">
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
 
-  <title>اپلیکیشن کانونی ها</title>
-  <link rel="manifest" href="manifest.json">
+    <title>اپلیکیشن کانونی ها</title>
+    <link rel="manifest" href="manifest.json">
 
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "1086089229";
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
-  <style>
-.loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
-  animation: spin 2s linear infinite;
-}
+    <script>
+        // The value below is injected by flutter build, do not touch.
+        const serviceWorkerVersion = "934026250";
 
-/* Safari */
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
+    </script>
+    <!-- This script adds the flutter initialization JS code -->
+    <script src="flutter.js" defer></script>
+    <style>
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 60px;
+            height: 60px;
+            -webkit-animation: spin 2s linear infinite;
+            /* Safari */
+            animation: spin 2s linear infinite;
+        }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-div {
-    width: 100px;
-    height: 100px;
+        /* Safari */
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
 
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
 
-    margin: auto;
-}
-</style>
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            margin: auto;
+        }
+    </style>
 </head>
+
 <body>
 
-<script src="main.dart.js" type="application/javascript"></script>
-<div class="loader"></div>
-<!--    <script src="main.dart.js" type="application/javascript"></script>-->
+<script>
+        if ('serviceWorker' in navigator) {
+            // Service workers are supported. Use them.
+            window.addEventListener('load', function () {
+                // ADD THIS LINE
+                navigator.serviceWorker.register('firebase-messaging-sw.js');
+
+                // Wait for registration to finish before dropping the <script> tag.
+                // Otherwise, the browser will load the script multiple times,
+                // potentially different versions.
+                var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
+
+                //  ...
+            });
+        }
+
+    </script>
 
 <script>
-       if ('serviceWorker' in navigator) {
-          // Service workers are supported. Use them.
-          window.addEventListener('load', function () {
-            // ADD THIS LINE
-            navigator.serviceWorker.register('firebase-messaging-sw.js');
-
-            // Wait for registration to finish before dropping the <script> tag.
-            // Otherwise, the browser will load the script multiple times,
-            // potentially different versions.
-            var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
-
-            //  ...
-          });
-      }
-  </script>
-
-<script>
-    window.flutterConfiguration = {
-      canvasKitBaseUrl: "canvaskit/"
-    };
-    window.addEventListener('load', function(ev) {
-        _flutter.loader.loadEntrypoint({
-        entrypointUrl: 'main.dart.js?v=' + serviceWorkerVersion,
-          serviceWorker: {
-            serviceWorkerVersion: serviceWorkerVersion,
-            serviceWorkerUrl: "flutter_service_worker.js?v="+serviceWorkerVersion,
-          },
-          onEntrypointLoaded: async function(engineInitializer) {
-            let appRunner = await engineInitializer.initializeEngine();
-            await appRunner.runApp();
-          }
+        window.addEventListener('load', function (ev) {
+            // Download main.dart.js
+            _flutter.loader.loadEntrypoint({
+                serviceWorker: {
+                    serviceWorkerVersion: serviceWorkerVersion,
+                    serviceWorkerUrl: "flutter_service_worker.js?v=" + serviceWorkerVersion,
+                },
+                onEntrypointLoaded: function (engineInitializer) {
+                    let config = {
+                        renderer: "canvaskit",
+                    };
+                    "Use engineInitializer.initializeEngine(config) only. Using the (deprecated) window.flutterConfiguration and initializeEngine configuration simultaneously is not supported."
+                    engineInitializer.initializeEngine(config).then(function (appRunner) {
+                        appRunner.runApp();
+                    });
+                }
+            });
         });
-      });
-  </script>
 
+    </script>
 </body>
+
 </html>

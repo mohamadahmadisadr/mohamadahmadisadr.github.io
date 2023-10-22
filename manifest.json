@@ -1,11 +1,11 @@
 {
-    "name": "کانونی ها",
-    "short_name": "کانونی ها",
+    "name": "kanooniha",
+    "short_name": "kanooniha",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#fff",
     "theme_color": "#fff",
-    "description": "کانونی ها",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
