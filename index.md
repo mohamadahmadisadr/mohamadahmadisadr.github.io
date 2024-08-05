@@ -41,6 +41,8 @@ Azad University, Shiraz Branch, Shiraz, Iran - *(2019-03 – 2022-07)*<br>
 + Designed and implemented an application for identifying animal medication needs based on user-entered symptoms, utilizing
 + Python, Kotlin, and JavaScript languages.
 
+---
+
 ### Skills
 
 **Programming Languages**: java, C++, Javascript, Kotlin, Dart, Python.<br>
