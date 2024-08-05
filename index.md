@@ -4,14 +4,15 @@
 
 ### EXPERIENCE
 
-[Kanoon Farhangi Amoozesh Ghalamchi](/sample_page)
+**Kanoon Farhangi Amoozesh Ghalamchi**
+<br>
 Senior Android Developer Tehran, Iran(2022-08 – 2024-07)
  
-• Implemented advanced CI/CD pipelines using Jenkins and Gradle, reducing deployment times by 50% and enhancing code
+- Implemented advanced CI/CD pipelines using Jenkins and Gradle, reducing deployment times by 50% and enhancing code
 quality.
-• Implemented Hilt and modular architecture, enhancing memory efficiency by 15% and simplifying app maintenance.
-• Used Test-Driven Development (TDD) to boost code coverage significantly.
-• Utilized Agile methodologies for efficient project development and teamwork.
+- Implemented Hilt and modular architecture, enhancing memory efficiency by 15% and simplifying app maintenance.
+- Used Test-Driven Development (TDD) to boost code coverage significantly.
+- Utilized Agile methodologies for efficient project development and teamwork.
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
