@@ -45,14 +45,14 @@ Azad University, Shiraz Branch, Shiraz, Iran - *(2019-03 – 2022-07)*<br>
 
 ### Skills
 
-**Programming Languages**: java, C++, Javascript, Kotlin, Dart, Python.<br>
-**APIs & Web Services**: RESTful APIs, JSON, Retrofit Ktor, Volley, OkHttp<br>
+**Programming Languages**: java, C++, Javascript, Kotlin, Dart, Python.<br><br>
+**APIs & Web Services**: RESTful APIs, JSON, Retrofit Ktor, Volley, OkHttp<br><br>
 **Design & Architectural Patterns**: MVVM, MVP, Dependency Injection (Dagger,Hilt, Koin), Singleton, Observer,
-Adapter, Factory, Builder<br>
-**UI/UX Design**: Jetpack Compose, XML Layouts, Material Design guidelines, responsive design, custom views, animations<br>
-**Database Management**: SQLite, SQL, Postgressql<br>
-**Testing and Debugging**: JUnit, Espresso, Mockito , UI Automator, Firebase Test Lab, debugging tools (Android Studio Debugger, Logcat).<br>
-**Mobile Security**: Encryption, secure data storage<br>
-**CI/CD Tools**: Experienced with Jenkins, GitHub Actions, Bitrise, CircleCI, and Travis CI<br>
-**Cloud Services**: Familiar with Firebase, AWS, and Google Cloud Platform for CI/CD workflows<br>
+Adapter, Factory, Builder<br><br>
+**UI/UX Design**: Jetpack Compose, XML Layouts, Material Design guidelines, responsive design, custom views, animations<br><br>
+**Database Management**: SQLite, SQL, Postgressql<br><br>
+**Testing and Debugging**: JUnit, Espresso, Mockito , UI Automator, Firebase Test Lab, debugging tools (Android Studio Debugger, Logcat).<br><br>
+**Mobile Security**: Encryption, secure data storage<br><br>
+**CI/CD Tools**: Experienced with Jenkins, GitHub Actions, Bitrise, CircleCI, and Travis CI<br><br>
+**Cloud Services**: Familiar with Firebase, AWS, and Google Cloud Platform for CI/CD workflows<br><br>
 **Soft Skills**: Strong problem-solving abilities, teamwork, communication skills, attention to detail, ability to learn new technologies quickly, ability to work in a fast-paced environment
