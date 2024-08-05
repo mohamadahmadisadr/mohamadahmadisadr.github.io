@@ -15,6 +15,16 @@ quality.
 - Utilized Agile methodologies for efficient project development and teamwork.
 
 ---
+
+**Android Developer**
+<br>
+Vesta System, Shiraz, Iran - *(2022-03 – 2022-08)* 
+- Resolved reported crashes in Firebase Crashlytics, resulting in an impressive 80% decrease in the overall crash rate.
+- Used augmented reality (AR) in the estate application to showcase ads in the real world through the camera, resulting in a notable increase in user attraction and engagement.
+- Integrated Jetpack tools, modularizing applications for superior performance and maintainability.
+
+
+
 [Project 2 Title](/pdf/sample_presentation.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
