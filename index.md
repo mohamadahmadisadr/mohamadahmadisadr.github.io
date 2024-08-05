@@ -2,18 +2,16 @@
 
 ---
 
-### Category Name 1 
+### EXPERIENCE
 
-[EXPERIENCE](/sample_page)
-<div>
-Senior Android Developer Tehran, Iran
-Kanoon Farhangi Amoozesh Ghalamchi 2022-08 – 2024-07
+[Kanoon Farhangi Amoozesh Ghalamchi](/sample_page)
+Senior Android Developer Tehran, Iran(2022-08 – 2024-07)
+ 
 • Implemented advanced CI/CD pipelines using Jenkins and Gradle, reducing deployment times by 50% and enhancing code
 quality.
 • Implemented Hilt and modular architecture, enhancing memory efficiency by 15% and simplifying app maintenance.
 • Used Test-Driven Development (TDD) to boost code coverage significantly.
 • Utilized Agile methodologies for efficient project development and teamwork.
-</div>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
