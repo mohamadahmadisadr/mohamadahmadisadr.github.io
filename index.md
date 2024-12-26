@@ -5,8 +5,8 @@
 ### EXPERIENCE
 
 **Android Developer**<br>
-- Led the design and architecture of a modular Android application, improving scalability and maintainability by implementing design patterns and best practices.
 Kanoon Farhangi Amoozesh Ghalamchi, Tehran, Iran - *(2022-08 – 2024-07)*
+- Led the design and architecture of a modular Android application, improving scalability and maintainability by implementing design patterns and best practices.
 - Implemented advanced CI/CD pipelines using Jenkins and Gradle, reducing deployment times by 50% and enhancing code
 quality.
 - Implemented Hilt and modular architecture, enhancing memory efficiency by 15% and simplifying app maintenance.
