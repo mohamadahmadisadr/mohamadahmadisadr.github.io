@@ -5,6 +5,7 @@
 ### EXPERIENCE
 
 **Android Developer**<br>
+- Led the design and architecture of a modular Android application, improving scalability and maintainability by implementing design patterns and best practices.
 Kanoon Farhangi Amoozesh Ghalamchi, Tehran, Iran - *(2022-08 – 2024-07)*
 - Implemented advanced CI/CD pipelines using Jenkins and Gradle, reducing deployment times by 50% and enhancing code
 quality.
@@ -14,6 +15,7 @@ quality.
 
 **Android Developer**<br>
 Vesta System, Shiraz, Iran - *(2022-03 – 2022-08)*
+- Implemented MVVM architecture in a mobile app, improving code maintainability and scalability, resulting in a 80\% reduction in bug reports.
 - Resolved reported crashes in Firebase Crashlytics, resulting in an impressive 80% decrease in the overall crash rate.
 - Used augmented reality (AR) in the estate application to showcase ads in the real world through the camera, resulting in a notable increase in user attraction and engagement.
 - Integrated Jetpack tools, modularizing applications for superior performance and maintainability.
@@ -21,6 +23,7 @@ Vesta System, Shiraz, Iran - *(2022-03 – 2022-08)*
 
 **Android Developer**<br>
 Amoozban.co, Shiraz, Iran - *(2020-10 – 2022-03)*
+- Collaborated with the AdOps team to develop new ad solutions, resulting in a 70\% increase in user engagement and revenue.
 - Enhanced code coverage by implementing unit tests
 - Boosted app performance by integrating a cache system into ExoPlayer, reducing network usage significantly.
 - Integrated speech recognition and ExoPlayer into the learning app, resulting in a more interactive and user-friendly experience.
