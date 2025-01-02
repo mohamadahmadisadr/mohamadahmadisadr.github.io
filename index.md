@@ -61,9 +61,9 @@ Adapter, Factory, Builder<br><br>
 **Soft Skills**: Strong problem-solving abilities, teamwork, communication skills, attention to detail, ability to learn new technologies quickly, ability to work in a fast-paced environment
 
 ### Certification
-**Agile Foundations**
-**Effective Android Testing for Mobile Developers**
-**Git Workflows**
-**Git for Teams**
-**Career Essentials in Software Development by Microsoft and LinkedIn**
-**Complete Kotlin Development Masterclass**
+**<a href="https://www.linkedin.com/learning/certificates/c40f4d389e4af14ec3d8f20072da085ab22cb7185b477dfe369d67efc19ff005?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BaeiHQkGuSyGxaa665Ce1dQ%3D%3D">Agile Foundations</a>**<br>
+**Effective Android Testing for Mobile Developers**<br>
+**Git Workflows**<br>
+**Git for Teams**<br>
+**Career Essentials in Software Development by Microsoft and LinkedIn**<br>
+**Complete Kotlin Development Masterclass**<br>
