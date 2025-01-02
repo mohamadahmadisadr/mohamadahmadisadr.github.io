@@ -59,3 +59,12 @@ Adapter, Factory, Builder<br><br>
 **CI/CD Tools**: Experienced with Jenkins, GitHub Actions, Bitrise, CircleCI, and Travis CI<br><br>
 **Cloud Services**: Familiar with Firebase, AWS, and Google Cloud Platform for CI/CD workflows<br><br>
 **Soft Skills**: Strong problem-solving abilities, teamwork, communication skills, attention to detail, ability to learn new technologies quickly, ability to work in a fast-paced environment
+
+### EXPERIENCE
+
+**Agile Foundations**
+**Effective Android Testing for Mobile Developers**
+**Git Workflows**
+**Git for Teams**
+**Career Essentials in Software Development by Microsoft and LinkedIn**
+**Complete Kotlin Development Masterclass**
