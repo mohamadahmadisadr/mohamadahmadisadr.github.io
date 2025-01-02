@@ -46,7 +46,7 @@ Azad University, Shiraz Branch, Shiraz, Iran - *(2019-03 – 2022-07)*<br>
 
 ---
 
-### Skills
+### SKILL
 
 **Programming Languages**: java, C++, Javascript, Kotlin, Dart, Python.<br><br>
 **APIs & Web Services**: RESTful APIs, JSON, Retrofit Ktor, Volley, OkHttp<br><br>
@@ -60,7 +60,7 @@ Adapter, Factory, Builder<br><br>
 **Cloud Services**: Familiar with Firebase, AWS, and Google Cloud Platform for CI/CD workflows<br><br>
 **Soft Skills**: Strong problem-solving abilities, teamwork, communication skills, attention to detail, ability to learn new technologies quickly, ability to work in a fast-paced environment
 
-### Certification
+### CERTIFICATION
 **<a href="https://www.linkedin.com/learning/certificates/c40f4d389e4af14ec3d8f20072da085ab22cb7185b477dfe369d67efc19ff005?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BaeiHQkGuSyGxaa665Ce1dQ%3D%3D">Agile Foundations</a>**<br><br>
 **<a href="https://www.linkedin.com/learning/certificates/07e15fd5e2645060cfc16af1366cf3687b2d33935d77807737f81d513e32d74f?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BaeiHQkGuSyGxaa665Ce1dQ%3D%3D">Effective Android Testing for Mobile Developers</a>**<br><br>
 **<a href="https://www.linkedin.com/learning/certificates/0370f4ab7a3fcaac86e63ae3ba6117718a58554cf254138af3d6f0745dfddd24?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BaeiHQkGuSyGxaa665Ce1dQ%3D%3D">Git Workflows</a>**<br><br>
