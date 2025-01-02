@@ -61,9 +61,9 @@ Adapter, Factory, Builder<br><br>
 **Soft Skills**: Strong problem-solving abilities, teamwork, communication skills, attention to detail, ability to learn new technologies quickly, ability to work in a fast-paced environment
 
 ### Certification
-**<a href="https://www.linkedin.com/learning/certificates/c40f4d389e4af14ec3d8f20072da085ab22cb7185b477dfe369d67efc19ff005?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BaeiHQkGuSyGxaa665Ce1dQ%3D%3D">Agile Foundations</a>**<br>
-**Effective Android Testing for Mobile Developers**<br>
-**Git Workflows**<br>
-**Git for Teams**<br>
-**Career Essentials in Software Development by Microsoft and LinkedIn**<br>
-**Complete Kotlin Development Masterclass**<br>
+**<a href="https://www.linkedin.com/learning/certificates/c40f4d389e4af14ec3d8f20072da085ab22cb7185b477dfe369d67efc19ff005?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BaeiHQkGuSyGxaa665Ce1dQ%3D%3D">Agile Foundations</a>**<br><br>
+**<a href="https://www.linkedin.com/learning/certificates/07e15fd5e2645060cfc16af1366cf3687b2d33935d77807737f81d513e32d74f?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BaeiHQkGuSyGxaa665Ce1dQ%3D%3D">Effective Android Testing for Mobile Developers</a>**<br><br>
+**<a href="https://www.linkedin.com/learning/certificates/0370f4ab7a3fcaac86e63ae3ba6117718a58554cf254138af3d6f0745dfddd24?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BaeiHQkGuSyGxaa665Ce1dQ%3D%3D">Git Workflows</a>**<br><br>
+**<a href="https://www.linkedin.com/learning/certificates/6422cd516ca51c31a3eca4f93b1608a1197f00f6090dcf6aacf9cc76e7bfc448?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BaeiHQkGuSyGxaa665Ce1dQ%3D%3D">Git for Teams</a>**<br><br>
+**<a href="https://www.linkedin.com/learning/certificates/7b0b10ceb3658a82e76a47293d7ff18bacbaa498b69f7e845751e71460ea2065?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BaeiHQkGuSyGxaa665Ce1dQ%3D%3D">Career Essentials in Software Development by Microsoft and LinkedIn</a>**<br><br>
+**<a href="https://drive.google.com/file/d/1OfuTlFtgu6NrsHI_Sam-iXrIaV6mkZrz/view?usp=sharing">Complete Kotlin Development Masterclass</a>**<br><br>
