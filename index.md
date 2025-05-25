@@ -58,20 +58,22 @@ Adapter, Factory, Builder<br><br>
 + **<a href="https://www.linkedin.com/learning/certificates/7b0b10ceb3658a82e76a47293d7ff18bacbaa498b69f7e845751e71460ea2065?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BaeiHQkGuSyGxaa665Ce1dQ%3D%3D">Career Essentials in Software Development by Microsoft and LinkedIn</a>**<br><br>
 + **<a href="https://drive.google.com/file/d/1OfuTlFtgu6NrsHI_Sam-iXrIaV6mkZrz/view?usp=sharing">Complete Kotlin Development Masterclass</a>**<br><br>
 
-<!-- ### PROJECTS
- **Mamam School**
-  <h4 style="margin-bottom: 20px; margin-top:-10px">
-  The Mamak School application is an Android app designed to empower mothers of children aged 3 to 7 in identifying and nurturing their children's unique talents. It provides a suite of tools and resources to help mothers understand their children's strengths and potential.
-  </h4>
+---
 
-  <img src="/images/mamak_prototype.png">
+## PROJECTS
 
-  <h3>As the Android developer on this project, my responsibilities included:</h3>
+### Mamam School
+
+The Mamak School application is an Android app designed to empower mothers of children aged 3 to 7 in identifying and nurturing their children's unique talents. It provides a suite of tools and resources to help mothers understand their children's strengths and potential.
+
+<img src="/images/mamak_prototype.png" alt="Mamam School App Screenshot" class="project-image">
+
+#### Responsibilities:
 
 - Software Architecture: Implemented a MVVM to separate business logic and UI,resulting in more readable, testable, and maintainable code.
-Dependency Management: Utilized Dagger-Hilt for dependency injection, reducing boilerplate and improving testability.
+- Dependency Management: Utilized Dagger-Hilt for dependency injection, reducing boilerplate and improving testability.
 - API Communication: Implemented communication with backend APIs using Retrofit for efficient and secure data transfer. Managed error handling and various server response states.
-Local Data Management: Used Room Persistence Library for structured and efficient local data storage and management.
+- Local Data Management: Used Room Persistence Library for structured and efficient local data storage and management.
 - User Interface (UI): Designed and implemented an attractive and user-friendly interface using Jetpack Compose . Adhered to Material Design principles and improved user experience (UX).
 - Image Management: Used libraries like Glide for optimized image loading, display, and management, preventing memory issues and improving app performance.
 - Testing: Wrote unit tests using JUnit and Mockito to ensure code correctness and prevent bugs. Implemented UI tests using Espresso.
@@ -79,16 +81,14 @@ Local Data Management: Used Room Persistence Library for structured and efficien
 - Threading and Coroutines: Used Coroutines for asynchronous operations to prevent blocking the UI thread.
 - Performance Optimization: Optimized code for improved app performance, reduced battery consumption, and efficient memory usage.
 
-<h3>Technologies Used:</h3>
+#### Technologies Used:
 
-+ Programming Languages: Kotlin
-+ Android SDK & Android Studio
-+ Architecture Components: ViewModel, Room Persistence Library
-+ Dependency Injection: Dagger-Hilt
-+ Networking: Retrofit
-+ Image Loading: Glide
-+ UI Framework: Jetpack Compose
-+ Testing: JUnit, Mockito, Espresso
-+ Asynchronous Programming: Coroutines, Flow
-
- -->
+- Programming Languages: Kotlin
+- Android SDK & Android Studio
+- Architecture Components: ViewModel, Room Persistence Library
+- Dependency Injection: Dagger-Hilt
+- Networking: Retrofit
+- Image Loading: Glide
+- UI Framework: Jetpack Compose
+- Testing: JUnit, Mockito, Espresso
+- Asynchronous Programming: Coroutines, Flow
