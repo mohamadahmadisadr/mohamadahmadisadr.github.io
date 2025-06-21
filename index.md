@@ -7,11 +7,11 @@ title: Mohammad Ahmadi Sadr
   <div class="hero-container">
     <div class="hero-content">
       <img src="/images/profile.png" alt="Profile" class="hero-avatar">
-      <h1 class="hero-title">Hi, I'm Mohamad Ahmadi Sadr</h1>
-      <p class="hero-subtitle">Full-Stack Developer & Software Engineer</p>
+      <h1 class="hero-title">Hi, I'm Mohammad Ahmadi Sadr</h1>
+      <p class="hero-subtitle">Full-Stack Developer</p>
+      <p class="hero-location">📍 Ottawa, Ontario | 📞 +1 438-454-0470</p>
       <p class="hero-description">
-        I build exceptional digital experiences with modern technologies. 
-        Passionate about creating scalable, secure, and user-centric applications.
+        Full Stack Developer experienced in cloud-based applications, RESTful APIs, and DevOps. Proficient in Agile development and cross-functional teamwork. Skilled in enhancing application performance and user experience with expertise in numerous programming languages and technologies.
       </p>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary">Get In Touch</a>
@@ -34,10 +34,11 @@ title: Mohammad Ahmadi Sadr
           </div>
           <p class="timeline-company">Kanoon Farhangi Amoozesh Ghalamchi, Tehran</p>
           <ul class="timeline-points">
-            <li>Developed and scaled cloud-based applications using modern full-stack technologies</li>
-            <li>Designed and managed RESTful APIs for seamless interoperability</li>
-            <li>Implemented DevOps pipelines for CI/CD, optimizing deployment speed and security</li>
-            <li>Led Agile development cycles for rapid feature delivery</li>
+            <li>Developed and scaled cloud-based applications using modern full-stack technologies.</li>
+            <li>Designed and managed RESTful APIs to ensure seamless interoperability between applications.</li>
+            <li>Implemented DevOps pipelines for CI/CD, optimizing deployment speed and security.</li>
+            <li>Led Agile development cycles, ensuring rapid feature delivery and iterative improvements.</li>
+            <li>As a Full-Stack Developer, implemented secure and immediate communication systems with SignalR and WebRTC technologies.</li>
           </ul>
         </div>
       </div>
@@ -51,9 +52,10 @@ title: Mohammad Ahmadi Sadr
           </div>
           <p class="timeline-company">Vesta System, Shiraz</p>
           <ul class="timeline-points">
-            <li>Reduced crash rate by 80% through proactive debugging and optimization</li>
-            <li>Integrated cloud-based services for scalability and reliability</li>
-            <li>Developed secure APIs for enterprise applications</li>
+            <li>Reduced crash rate by 80% through debugging and performance enhancement</li>
+            <li>Improved maintainability with modular architecture and best software engineering practices</li>
+            <li>Collaborated with cross-functional teams to deliver high-quality healthcare applications, ensuring timely and efficient deployment</li>
+            <li>Utilized Firebase and React to build and maintain high-quality, scalable full-stack applications, meeting business requirements and customer needs</li>
           </ul>
         </div>
       </div>
@@ -67,8 +69,25 @@ title: Mohammad Ahmadi Sadr
           </div>
           <p class="timeline-company">Amoozban.co, Shiraz</p>
           <ul class="timeline-points">
-            <li>Designed and developed APIs for high-performance applications</li>
-            <li>Integrated speech recognition and ExoPlayer into learning applications</li>
+            <li>Applied knowledge of TDD and RESTful API to improve code efficiency and application performance as a Full-Stack Developer</li>
+            <li>Implemented CI/CD, GitHub Actions into the development workflow to ensure consistent and reliable code deployments</li>
+            <li>Successfully designed a variety of dynamic web applications utilizing the power of React and Node.js as a Full-Stack Developer</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Software Engineer</h3>
+            <span class="timeline-date">2018-07 – 2020-10</span>
+          </div>
+          <p class="timeline-company">Fars Science and Technology Park, Shiraz</p>
+          <ul class="timeline-points">
+            <li>Designed and developed scalable web applications using Python, Django, and other technologies to meet business requirements</li>
+            <li>Designed and developed scalable database architectures using PostgreSQL, MySQL, and Node.js for high-traffic web applications</li>
+            <li>Collaborated with cross-functional teams to design and deploy full-stack applications on AWS, Azure, ensuring seamless integration and scalability</li>
           </ul>
         </div>
       </div>
@@ -81,47 +100,85 @@ title: Mohammad Ahmadi Sadr
     <h2 class="section-title">Skills & Technologies</h2>
     <div class="skills-grid">
       <div class="skill-card">
-        <h3>Languages</h3>
+        <h3>Frontend Development</h3>
         <div class="skill-tags">
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">JavaScript (ES6+)</span>
           <span class="skill-tag">TypeScript</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">Kotlin</span>
-          <span class="skill-tag">C++</span>
-        </div>
-      </div>
-      
-      <div class="skill-card">
-        <h3>Frontend</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">Vue.js</span>
+          <span class="skill-tag">React.js</span>
           <span class="skill-tag">Angular</span>
-          <span class="skill-tag">Jetpack Compose</span>
-          <span class="skill-tag">Material Design</span>
+          <span class="skill-tag">Vue.js</span>
+          <span class="skill-tag">Material-UI</span>
+          <span class="skill-tag">Bootstrap</span>
+          <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">Webpack</span>
+          <span class="skill-tag">Vite</span>
+          <span class="skill-tag">Redux Toolkit</span>
         </div>
       </div>
       
       <div class="skill-card">
-        <h3>Backend</h3>
+        <h3>Backend Development</h3>
         <div class="skill-tags">
           <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">Flask</span>
           <span class="skill-tag">RESTful APIs</span>
-          <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">SQLite</span>
-          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">GraphQL</span>
+          <span class="skill-tag">OAuth 2.0</span>
+          <span class="skill-tag">JWT</span>
         </div>
       </div>
       
       <div class="skill-card">
-        <h3>DevOps & Cloud</h3>
+        <h3>Databases</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Redis</span>
+          <span class="skill-tag">Firebase Firestore</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MySQL</span>
+        </div>
+      </div>
+      
+      <div class="skill-card">
+        <h3>Cloud & DevOps</h3>
         <div class="skill-tags">
           <span class="skill-tag">AWS</span>
-          <span class="skill-tag">Azure</span>
+          <span class="skill-tag">Google Cloud Platform</span>
+          <span class="skill-tag">Microsoft Azure</span>
+          <span class="skill-tag">Git</span>
           <span class="skill-tag">Docker</span>
-          <span class="skill-tag">CI/CD</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Jenkins</span>
           <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">GitLab CI/CD</span>
+          <span class="skill-tag">Netlify</span>
+        </div>
+      </div>
+      
+      <div class="skill-card">
+        <h3>Testing & Development</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Jest</span>
+          <span class="skill-tag">JUnit</span>
+          <span class="skill-tag">Pytest</span>
+          <span class="skill-tag">Cypress</span>
+          <span class="skill-tag">Selenium</span>
+          <span class="skill-tag">Test-Driven Development</span>
+          <span class="skill-tag">Agile</span>
+        </div>
+      </div>
+      
+      <div class="skill-card">
+        <h3>Other Technologies</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Microservices</span>
+          <span class="skill-tag">Serverless</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Kotlin</span>
         </div>
       </div>
     </div>
@@ -132,33 +189,98 @@ title: Mohammad Ahmadi Sadr
   <div class="container">
     <h2 class="section-title">Education</h2>
     <div class="education-card">
-      <h3>Bachelor's in Computer Science and Engineering</h3>
+      <h3>Bachelor of Computer Science Engineering</h3>
       <p class="education-school">Azad University, Shiraz Branch</p>
-      <p class="education-date">2019-03 – 2022-07</p>
+      <p class="education-date">Mar 2019 – Jul 2022</p>
       <ul class="education-highlights">
-        <li>Expertise in SQL, data querying, and manipulation</li>
-        <li>Developed animal medication app using Python, Kotlin, and JavaScript</li>
+        <li>Specialized in Software Engineering and Computer Science fundamentals</li>
+        <li>Gained expertise in data structures, algorithms, and software design patterns</li>
+        <li>Developed practical experience with various programming languages and frameworks</li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Community Web Application</h3>
+        <p class="project-date">Mar 2023 - Present</p>
+        <p class="project-description">
+          Developed a responsive web application using React with Material-UI for the user interface and React Router v6 for navigation. 
+          Leveraged Redux Toolkit for state management and implemented client-side form validation. 
+          Firebase was used for real-time database capabilities, user authentication, and hosting, with the project built using Vite.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Material-UI</span>
+          <span class="tech-tag">Redux Toolkit</span>
+          <span class="tech-tag">Firebase</span>
+          <span class="tech-tag">Vite</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="section section-alt">
   <div class="container">
+    <h2 class="section-title">Soft Skills</h2>
+    <div class="soft-skills-grid">
+      <div class="soft-skill-item">
+        <h4>Problem-Solving</h4>
+        <p>Analytical thinking and creative solutions to complex technical challenges</p>
+      </div>
+      <div class="soft-skill-item">
+        <h4>Communication</h4>
+        <p>Clear technical communication with team members and stakeholders</p>
+      </div>
+      <div class="soft-skill-item">
+        <h4>Teamwork & Collaboration</h4>
+        <p>Effective collaboration in cross-functional and remote teams</p>
+      </div>
+      <div class="soft-skill-item">
+        <h4>Adaptability</h4>
+        <p>Quick learning and adaptation to new technologies and methodologies</p>
+      </div>
+      <div class="soft-skill-item">
+        <h4>Time Management</h4>
+        <p>Efficient prioritization and delivery of projects within deadlines</p>
+      </div>
+      <div class="soft-skill-item">
+        <h4>Attention to Detail</h4>
+        <p>Meticulous code quality and thorough testing practices</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
     <h2 class="section-title">Certifications</h2>
     <div class="cert-grid">
-      <a href="https://www.linkedin.com/learning/certificates/c40f4d389e4af14ec3d8f20072da085ab22cb7185b477dfe369d67efc19ff005" target="_blank" class="cert-card">
+      <div class="cert-card">
         <h4>Agile Foundations</h4>
-      </a>
-      <a href="https://www.linkedin.com/learning/certificates/07e15fd5e2645060cfc16af1366cf3687b2d33935d77807737f81d513e32d74f" target="_blank" class="cert-card">
-        <h4>Effective Android Testing</h4>
-      </a>
-      <a href="https://www.linkedin.com/learning/certificates/0370f4ab7a3fcaac86e63ae3ba6117718a58554cf254138af3d6f0745dfddd24" target="_blank" class="cert-card">
+        <p class="cert-date">Dec 2024</p>
+        <p class="cert-issuer">LinkedIn Learning</p>
+      </div>
+      <div class="cert-card">
         <h4>Git Workflows</h4>
-      </a>
-      <a href="https://www.linkedin.com/learning/certificates/7b0b10ceb3658a82e76a47293d7ff18bacbaa498b69f7e845751e71460ea2065" target="_blank" class="cert-card">
+        <p class="cert-date">Dec 2024</p>
+        <p class="cert-issuer">LinkedIn Learning</p>
+      </div>
+      <div class="cert-card">
+        <h4>Git for Teams</h4>
+        <p class="cert-date">Dec 2024</p>
+        <p class="cert-issuer">LinkedIn Learning</p>
+      </div>
+      <div class="cert-card">
         <h4>Career Essentials in Software Development</h4>
-      </a>
+        <p class="cert-date">Dec 2024</p>
+        <p class="cert-issuer">Microsoft & LinkedIn</p>
+      </div>
     </div>
   </div>
 </section>
