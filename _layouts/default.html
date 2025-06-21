@@ -1,6 +1,43 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en">
 <head>
+<<<<<<< HEAD
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title | default: "Mohamad Ahmad Isadr" }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="{{ '/' | relative_url }}" class="nav-logo">Mohamad Ahmad Isadr</a>
+            <div class="nav-menu">
+                <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
+                <a href="{{ '/about' | relative_url }}" class="nav-link">About</a>
+                <a href="{{ '/projects' | relative_url }}" class="nav-link">Projects</a>
+                <a href="{{ '/contact' | relative_url }}" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        {{ content }}
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>&copy; 2025 Mohamad Ahmad Isadr. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="mailto:mohamad.ahmadisadr@example.com" class="social-link">Email</a>
+                    <a href="https://linkedin.com/in/mohamadahmadisadr" class="social-link">LinkedIn</a>
+                    <a href="https://github.com/mohamadahmadisadr" class="social-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+=======
    {% if site.google_analytics %}
    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
    <script>
@@ -59,5 +96,6 @@
     </footer>
   </div>
   <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+>>>>>>> 14ea76a2c34bc61176306af9db4b0b0c256355e3
 </body>
 </html>
