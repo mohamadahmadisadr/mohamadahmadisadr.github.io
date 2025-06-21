@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title | default: "Mohamad Ahmad Isadr" }}</title>
@@ -36,5 +37,65 @@
             </div>
         </div>
     </footer>
+=======
+   {% if site.google_analytics %}
+   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', '{{ site.google_analytics }}');
+   </script>
+   {% endif %}
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   {% seo %}
+   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+   <!--[if lt IE 9]>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+   <![endif]-->
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Logo" class="profile-logo" />
+        {% endif %}
+        <div class="header-text">
+          <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+          {% if site.description %}
+            <p>{{ site.description }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <!-- Navigation links can be added here if needed, or managed via site.data -->
+        <!-- Example: <li><a href="#experience">Experience</a></li> -->
+      </ul>
+    </nav>
+
+    <main id="content">
+      {{ content }}
+    </main>
+
+    <footer>
+      <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+      {% if site.show_downloads %}
+      <ul class="downloads">
+         <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
+         <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
+         <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+      </ul>
+      {% endif %}
+    </footer>
+  </div>
+  <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+>>>>>>> 14ea76a2c34bc61176306af9db4b0b0c256355e3
 </body>
 </html>

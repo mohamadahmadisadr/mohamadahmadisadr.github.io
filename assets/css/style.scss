@@ -1,0 +1,371 @@
+---
+---
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+// Basic Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa; // Lighter gray for background
+  color: #343a40; // Darker gray for text
+  padding: 0; // Remove body padding, container will handle it
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px; // Standard max-width for modern layouts
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-grow: 1; // Allows footer to stick to bottom
+}
+
+// Header Styling
+header {
+  background: #ffffff; // White background for header
+  color: #343a40;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e9ecef; // Subtle border
+  margin-bottom: 2rem; // Space below header
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); // Added subtle shadow
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.profile-logo {
+  width: 80px; // Adjust size as needed
+  height: 80px;
+  border-radius: 50%; // Circular logo
+  margin-right: 20px;
+  object-fit: cover; // Ensure image covers the area
+}
+
+.header-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem; // Slightly larger
+  margin-bottom: 0.25rem;
+  color: #343a40;
+}
+
+.header-text h1 a {
+  color: inherit; // Inherit color from h1
+  text-decoration: none;
+}
+
+.header-text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  color: #6c757d; // Muted color for description
+  margin-bottom: 0; // Remove default paragraph margin
+}
+
+// Navigation Styling (basic, can be expanded)
+nav {
+  background: #343a40; // Dark background for nav
+  padding: 0.5rem 0;
+  margin-bottom: 2rem; // Space below nav
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center; // Or left/right align as preferred
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 25px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #f8f9fa; // Light text on dark background
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem; // Adjusted padding
+  border-radius: 5px; // Adjusted border-radius
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffffff; // Ensured white text color
+  background-color: #007bff; // Changed background to accent blue
+  text-decoration: none;
+  font-weight: 600; // Added font weight for emphasis
+}
+
+// Main Content Area
+#content {
+  background: #ffffff; // White background for content
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.07); // Updated shadow
+  margin-bottom: 2rem; // Space before footer
+}
+
+// Typography within #content
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #343a40;
+  margin-top: 1.5rem; // Default margin-top for headings
+  margin-bottom: 1rem;
+  line-height: 1.4; // General line-height for headings (adjusted from 1.3)
+}
+
+#content h1 { font-size: 2.25rem; } /* Page Title (if any within content) */
+
+#content h2 {
+  font-size: 1.75rem; /* Section Titles like "PROJECTS", "EXPERIENCE" */
+  font-weight: 700; // Bold for H2
+  border-top: 1px solid #e9ecef; // Section divider line
+  padding-top: 2rem; // Space below divider line
+  margin-top: 2.5rem; // Space above divider line
+}
+
+#content h2:first-of-type { // Remove divider for the first H2
+  border-top: none;
+  padding-top: 0;
+  margin-top: 1.5rem; // Keep original margin-top if no border
+}
+
+#content h3 {
+  font-size: 1.5rem;  /* Project Titles like "Mamam School" */
+  font-weight: 600; // Semi-bold for H3
+}
+#content h4 { font-size: 1.25rem; } /* Sub-headings within projects like "Responsibilities" */
+// h5 and h6 will inherit general heading styles if not specifically overridden
+
+#content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem; // Updated font size
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #495057; // Slightly lighter text for paragraphs
+}
+
+#content a {
+  color: #007bff; // Standard accent blue
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#content a:hover {
+  color: #0056b3; // Darker blue on hover
+  text-decoration: underline;
+}
+
+#content ul, #content ol {
+  margin-bottom: 1rem;
+  padding-left: 20px;
+}
+
+#content ul li, #content ol li {
+  margin-bottom: 0.5rem;
+}
+
+#content img { // General image styling within content
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; // Slight rounding for images
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+// Project Section Specific Styling
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; // Space between cards
+  margin-top: 1rem; // Space above the grid
+}
+
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08); // Updated border color
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); // Updated box shadow
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  flex-basis: 100%; // Default to full width on smallest screens
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12); // Updated hover box shadow
+  transform: translateY(-5px);
+}
+
+.project-card h3 { // Project Title e.g. "Mamam School"
+  margin-top: 0; // Remove default top margin for h3 inside card
+  color: #007bff; // Accent color for project titles
+  font-size: 1.35rem; // Adjusted font size
+  font-weight: 600; // Ensured semi-bold font weight
+}
+
+.project-card .project-image {
+  width: 100%;
+  max-height: 250px; // Max height for consistency
+  object-fit: cover; // Cover the area, might crop
+  border-radius: 4px; // Adjusted for consistency with #content img
+  margin-bottom: 1rem;
+}
+
+.project-card h4 { // Sub-headings like "Responsibilities"
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem; // Slightly smaller than card title
+  color: #495057;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3rem;
+  font-weight: 600; // Ensured semi-bold font weight
+}
+
+.project-card ul {
+  padding-left: 15px; // Indent lists slightly less in cards
+  font-size: 0.9rem;
+}
+
+.project-card ul li {
+  margin-bottom: 0.3rem;
+  line-height: 1.6; // Added line-height for list items
+}
+
+// Footer Styling
+footer {
+  background: #343a40; // Dark footer
+  color: #f8f9fa;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: auto; // Pushes footer to the bottom
+  border-top: 1px solid #495057; // Added border-top
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+footer .downloads {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+footer .downloads li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer .downloads li a {
+  color: #adb5bd; // Lighter color for download links
+  text-decoration: none;
+  transition: color 0.3s ease; // Ensured transition
+}
+
+footer .downloads li a:hover {
+  color: #f8f9fa;
+  text-decoration: underline;
+}
+
+// Responsive Design
+
+// Project card layout adjustments
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .project-card {
+    flex-basis: calc(50% - 1rem); // 2 cards per row, considering the 2rem gap
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .project-card {
+    flex-basis: calc(33.333% - 1.34rem); // 3 cards per row
+  }
+}
+
+
+@media (max-width: 992px) { // Tablet and below - general responsive
+  .container {
+    max-width: 960px;
+  }
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-logo {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .header-text h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) { // Mobile - general responsive
+  body {
+    padding: 0;
+  }
+  .container {
+    padding: 0 15px;
+  }
+  header {
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+  }
+  .header-text h1 {
+    font-size: 1.6rem;
+  }
+  .profile-logo {
+    width: 60px;
+    height: 60px;
+  }
+  nav {
+    margin-bottom: 1.5rem;
+  }
+  nav ul li {
+    display: block;
+    margin: 0 0 10px 0;
+  }
+  nav ul li a {
+    display: block;
+  }
+  #content {
+    padding: 20px;
+    margin-bottom: 1.5rem;
+  }
+  #content h1 { font-size: 2rem; }
+  #content h2 { font-size: 1.6rem; }
+  #content h3 { font-size: 1.4rem; }
+
+  footer {
+    padding: 1.5rem 0;
+  }
+
+  // Ensure project cards are single column on mobile
+  .project-card {
+    flex-basis: 100%;
+  }
+  .projects-grid {
+    gap: 1.5rem; // Reduce gap for stacked cards on mobile
+  }
+}
