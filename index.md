@@ -206,6 +206,27 @@ title: Mohammad Ahmadi Sadr
     <h2 class="section-title">Featured Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
+        <h3>504 Web Application</h3>
+        <p class="project-date">July 2024 - Present</p>
+        <p class="project-description">
+          A comprehensive web application built with modern technologies. The project demonstrates full-stack development capabilities 
+          with a clean, responsive user interface and robust backend functionality. Features include user authentication, 
+          real-time data handling, and optimized performance.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">HTML</span>
+        </div>
+        <div class="project-links">
+          <a href="https://vocab-d8201.web.app/" target="_blank" class="btn btn-primary">Live Demo</a>
+          <a href="https://github.com/mohamadahmadisadr/504Web" target="_blank" class="btn btn-outline">View Code</a>
+        </div>
+      </div>
+      
+      <div class="project-card">
         <h3>Community Web Application</h3>
         <p class="project-date">Mar 2023 - Present</p>
         <p class="project-description">
@@ -219,6 +240,10 @@ title: Mohammad Ahmadi Sadr
           <span class="tech-tag">Redux Toolkit</span>
           <span class="tech-tag">Firebase</span>
           <span class="tech-tag">Vite</span>
+        </div>
+                <div class="project-links">
+          <a href="https://persian.social/" target="_blank" class="btn btn-primary">Live Demo</a>
+          <a href="https://github.com/mohamadahmadisadr/community" target="_blank" class="btn btn-outline">View Code</a>
         </div>
       </div>
     </div>
