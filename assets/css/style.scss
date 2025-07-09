@@ -164,26 +164,25 @@ body {
 }
 
 .btn-primary {
-  background: var(--primary);
-  color: white;
+  background-color: var(--primary-color);
+  color: blue;
+  border: 2px solid var(--primary-color);
 }
 
 .btn-primary:hover {
-  background: var(--primary-dark);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-lg);
+  background-color: transparent;
+  color: var(--primary-color);
 }
 
 .btn-outline {
   background: transparent;
-  color: var(--primary);
-  border-color: var(--primary);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
 }
 
 .btn-outline:hover {
-  background: var(--primary);
-  color: white;
-  transform: translateY(-1px);
+  background: var(--primary-color);
+  color: var(--bg-color);
 }
 
 /* Sections */
@@ -442,6 +441,17 @@ body {
   border: 1px solid var(--border);
 }
 
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.project-links .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
 /* Soft Skills */
 .soft-skills-grid {
   display: grid;
@@ -652,4 +662,35 @@ body {
   .cert-grid {
     grid-template-columns: 1fr;
   }
+
+  .project-screenshots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.screenshot {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.screenshot:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .project-screenshots {
+    grid-template-columns: 1fr;
+  }
+}
+
 }
