@@ -87,7 +87,39 @@ title: Mohammad Ahmadi Sadr
   </div>
 </section>
 
-<section class="section section-alt" id="skills">
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Soft Skills</h2>
+    <div class="soft-skills-grid">
+      <div class="soft-skill-item">
+        <h4>Problem-Solving</h4>
+        <p>Analytical thinking and creative solutions to complex technical challenges</p>
+      </div>
+      <div class="soft-skill-item">
+        <h4>Communication</h4>
+        <p>Clear technical communication with team members and stakeholders</p>
+      </div>
+      <div class="soft-skill-item">
+        <h4>Teamwork & Collaboration</h4>
+        <p>Effective collaboration in cross-functional and remote teams</p>
+      </div>
+      <div class="soft-skill-item">
+        <h4>Adaptability</h4>
+        <p>Quick learning and adaptation to new technologies and methodologies</p>
+      </div>
+      <div class="soft-skill-item">
+        <h4>Time Management</h4>
+        <p>Efficient prioritization and delivery of projects within deadlines</p>
+      </div>
+      <div class="soft-skill-item">
+        <h4>Attention to Detail</h4>
+        <p>Meticulous code quality and thorough testing practices</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="skills">
   <div class="container">
     <h2 class="section-title">Skills & Technologies</h2>
     <div class="skills-grid">
@@ -179,7 +211,7 @@ title: Mohammad Ahmadi Sadr
   </div>
 </section>
 
-<section class="section">
+<section class="section section-alt">
   <div class="container">
     <h2 class="section-title">Education</h2>
     <div class="education-card">
@@ -248,39 +280,8 @@ title: Mohammad Ahmadi Sadr
   </div>
 </section>
 
-<section class="section section-alt">
-  <div class="container">
-    <h2 class="section-title">Soft Skills</h2>
-    <div class="soft-skills-grid">
-      <div class="soft-skill-item">
-        <h4>Problem-Solving</h4>
-        <p>Analytical thinking and creative solutions to complex technical challenges</p>
-      </div>
-      <div class="soft-skill-item">
-        <h4>Communication</h4>
-        <p>Clear technical communication with team members and stakeholders</p>
-      </div>
-      <div class="soft-skill-item">
-        <h4>Teamwork & Collaboration</h4>
-        <p>Effective collaboration in cross-functional and remote teams</p>
-      </div>
-      <div class="soft-skill-item">
-        <h4>Adaptability</h4>
-        <p>Quick learning and adaptation to new technologies and methodologies</p>
-      </div>
-      <div class="soft-skill-item">
-        <h4>Time Management</h4>
-        <p>Efficient prioritization and delivery of projects within deadlines</p>
-      </div>
-      <div class="soft-skill-item">
-        <h4>Attention to Detail</h4>
-        <p>Meticulous code quality and thorough testing practices</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="section">
+<section class="section section-alt">
   <div class="container">
     <h2 class="section-title">Certifications</h2>
     <div class="cert-grid">
