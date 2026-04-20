@@ -48,4 +48,24 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Theme Toggle Logic
+  const themeToggleBtn = document.getElementById('themeToggle');
+  
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      let currentTheme = document.documentElement.getAttribute('data-theme');
+      let targetTheme = 'light';
+      
+      if (currentTheme === 'dark') {
+        targetTheme = 'light';
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        targetTheme = 'dark';
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+      
+      localStorage.setItem('theme', targetTheme);
+    });
+  }
 });
