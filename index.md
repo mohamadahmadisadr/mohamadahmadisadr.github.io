@@ -83,6 +83,26 @@ title: Mohammad Ahmadi Sadr
           </ul>
         </div>
       </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Android Developer</h3>
+            <span class="timeline-date">Jul 2019 – Jul 2022</span>
+          </div>
+          <p class="timeline-company">Fars Science and Technology Park</p>
+          <ul class="timeline-points">
+            <li>Designed and developed Android applications using Java and Kotlin for enterprise, educational, and business use cases.</li>
+            <li>Built scalable app architectures using MVVM, Clean Code principles, and reusable modular components.</li>
+            <li>Developed modern Android UI using XML, Material Design, and responsive layouts for multiple screen sizes.</li>
+            <li>Integrated RESTful APIs using Retrofit, OkHttp, and JSON parsing for real-time data communication.</li>
+            <li>Implemented local storage solutions using SQLite, Room Database, and SharedPreferences.</li>
+            <li>Developed background features using Services, Broadcast Receivers, and scheduled tasks.</li>
+            <li>Worked with Android Jetpack components including Navigation, LiveData, ViewModel, and Lifecycle libraries.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -274,6 +294,19 @@ title: Mohammad Ahmadi Sadr
         </div>
         <div class="project-links">
           <a href="https://github.com/mohamadahmadisadr" target="_blank" class="btn btn-outline">View Code</a>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <h3>Smart Dental Imaging Device with Android Integration</h3>
+        <p class="project-description">
+          Designed and developed a custom dental imaging device to capture high-quality teeth images for clinical use. Built an intuitive Human-Machine Interface (HMI) for seamless user interaction and image capture control. Integrated hardware with an Android application for real-time image transfer and viewing. Implemented communication between embedded device and mobile platform using wireless/wired protocols. Improved usability by creating a simple workflow for dentists to capture, review, and manage patient images. Worked on image acquisition, device control logic, and mobile connectivity features. Focused on user-centered design, responsiveness, and reliability in a healthcare environment.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">Android</span>
+          <span class="tech-tag">Hardware Integration</span>
+          <span class="tech-tag">HMI</span>
+          <span class="tech-tag">Protocols</span>
         </div>
       </div>
     </div>
