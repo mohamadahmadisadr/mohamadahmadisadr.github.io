@@ -28,6 +28,28 @@ document.addEventListener('DOMContentLoaded', () => {
     revealOnScroll.observe(el);
   });
 
+  // Analytics: Track when sections are viewed
+  const sectionObserverOptions = {
+    threshold: 0.3 // Trigger when 30% of the section is visible
+  };
+
+  const sectionObserver = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const sectionId = entry.target.getAttribute('id');
+        if (sectionId && window.firebaseLogEvent) {
+          window.firebaseLogEvent('section_view', { section_name: sectionId });
+          // Only track each section once per page load
+          observer.unobserve(entry.target);
+        }
+      }
+    });
+  }, sectionObserverOptions);
+
+  document.querySelectorAll('section').forEach(section => {
+    sectionObserver.observe(section);
+  });
+
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

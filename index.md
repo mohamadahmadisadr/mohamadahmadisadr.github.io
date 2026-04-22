@@ -107,7 +107,7 @@ title: Mohammad Ahmadi Sadr
   </div>
 </section>
 
-<section class="section section-alt">
+<section class="section section-alt" id="soft-skills">
   <div class="container">
     <h2 class="section-title">Soft Skills</h2>
     <div class="soft-skills-grid">
@@ -231,7 +231,7 @@ title: Mohammad Ahmadi Sadr
   </div>
 </section>
 
-<section class="section section-alt">
+<section class="section section-alt" id="education">
   <div class="container">
     <h2 class="section-title">Education</h2>
     <div class="education-card">
@@ -252,7 +252,7 @@ title: Mohammad Ahmadi Sadr
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="featured-projects">
   <div class="container">
     <h2 class="section-title">Featured Projects</h2>
     <div class="projects-grid">
@@ -314,7 +314,7 @@ title: Mohammad Ahmadi Sadr
 </section>
 
 
-<section class="section section-alt">
+<section class="section section-alt" id="certifications">
   <div class="container">
     <h2 class="section-title">Certifications</h2>
     <div class="cert-grid">
