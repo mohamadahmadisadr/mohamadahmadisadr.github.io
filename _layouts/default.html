@@ -16,6 +16,25 @@
     }
   </script>
   {% seo %}
+
+  <!-- Firebase Analytics -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBhVn7oZP05IBWOm-q3qibHJybD6DKpUuk",
+      authDomain: "portfolio-2f595.firebaseapp.com",
+      projectId: "portfolio-2f595",
+      storageBucket: "portfolio-2f595.firebasestorage.app",
+      messagingSenderId: "437232320032",
+      appId: "1:437232320032:web:42d6fc61f2499a1a3f4645",
+      measurementId: "G-WFVCPC3CYP"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </head>
 <body>
   <nav class="navbar">
