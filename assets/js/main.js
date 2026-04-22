@@ -28,19 +28,39 @@ document.addEventListener('DOMContentLoaded', () => {
     revealOnScroll.observe(el);
   });
 
-  // Analytics: Track when sections are viewed
+  // Analytics: Track when sections are viewed and time spent
   const sectionObserverOptions = {
     threshold: 0.3 // Trigger when 30% of the section is visible
   };
 
+  const viewedSections = new Set();
+  const sectionEntryTimes = {};
+
   const sectionObserver = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
+      const sectionId = entry.target.getAttribute('id');
+      if (!sectionId) return;
+
       if (entry.isIntersecting) {
-        const sectionId = entry.target.getAttribute('id');
-        if (sectionId && window.firebaseLogEvent) {
+        // Track section view only once
+        if (!viewedSections.has(sectionId) && window.firebaseLogEvent) {
           window.firebaseLogEvent('section_view', { section_name: sectionId });
-          // Only track each section once per page load
-          observer.unobserve(entry.target);
+          viewedSections.add(sectionId);
+        }
+        // Record the time they started looking at this section
+        sectionEntryTimes[sectionId] = Date.now();
+      } else {
+        // When they leave the section, calculate how long they looked at it
+        if (sectionEntryTimes[sectionId]) {
+          const timeSpentSeconds = Math.round((Date.now() - sectionEntryTimes[sectionId]) / 1000);
+          // Only log if they spent at least 2 seconds (filters out fast scrolling)
+          if (timeSpentSeconds >= 2 && window.firebaseLogEvent) {
+            window.firebaseLogEvent('section_time_spent', { 
+              section_name: sectionId,
+              time_spent_seconds: timeSpentSeconds 
+            });
+          }
+          delete sectionEntryTimes[sectionId];
         }
       }
     });
@@ -88,6 +108,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       
       localStorage.setItem('theme', targetTheme);
+      
+      // Analytics: Track theme toggling
+      if (window.firebaseLogEvent) {
+        window.firebaseLogEvent('theme_change', {
+          theme: targetTheme
+        });
+      }
     });
   }
 
@@ -100,6 +127,18 @@ document.addEventListener('DOMContentLoaded', () => {
         window.firebaseLogEvent('outbound_click', {
           link_url: url,
           link_text: linkText
+        });
+      }
+    });
+  });
+
+  // Analytics: Track contact interactions (Email and Phone clicks)
+  document.querySelectorAll('a[href^="mailto:"], a[href^="tel:"]').forEach(link => {
+    link.addEventListener('click', function() {
+      if (window.firebaseLogEvent) {
+        const type = this.getAttribute('href').startsWith('mailto:') ? 'email' : 'phone';
+        window.firebaseLogEvent('contact_click', {
+          contact_type: type
         });
       }
     });
