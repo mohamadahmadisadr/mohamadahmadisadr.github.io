@@ -90,4 +90,18 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('theme', targetTheme);
     });
   }
+
+  // Analytics: Track outbound link clicks (like GitHub buttons)
+  document.querySelectorAll('a[href^="http"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      if (window.firebaseLogEvent) {
+        const url = this.getAttribute('href');
+        const linkText = this.innerText.trim();
+        window.firebaseLogEvent('outbound_click', {
+          link_url: url,
+          link_text: linkText
+        });
+      }
+    });
+  });
 });
