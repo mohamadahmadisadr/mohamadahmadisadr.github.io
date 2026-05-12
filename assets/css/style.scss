@@ -522,6 +522,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.5rem;
+  align-items: start;
 }
 
 .project-card {
@@ -550,7 +551,6 @@ body {
   line-height: 1.6;
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
-  flex-grow: 1;
 }
 
 .project-tech {
@@ -558,6 +558,10 @@ body {
   flex-wrap: wrap;
   gap: 0.4rem;
   margin-bottom: 1.5rem;
+}
+
+.project-tech:last-child {
+  margin-bottom: 0;
 }
 
 .tech-tag {

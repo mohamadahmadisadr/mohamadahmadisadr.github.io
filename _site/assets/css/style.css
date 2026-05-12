@@ -14,6 +14,22 @@
   --radius-md: 16px;
   --radius-lg: 24px;
   --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --nav-bg: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme=dark] {
+  --primary: #8ab4f8;
+  --primary-hover: #aecbfa;
+  --primary-light: rgba(138, 180, 248, 0.15);
+  --text: #e8eaed;
+  --text-secondary: #9aa0a6;
+  --text-muted: #5f6368;
+  --background: #202124;
+  --background-alt: #303134;
+  --border: #5f6368;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 4px 8px 3px rgba(0, 0, 0, 0.2);
+  --nav-bg: rgba(32, 33, 36, 0.95);
 }
 
 * {
@@ -66,7 +82,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--nav-bg);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
@@ -110,6 +126,42 @@ body {
 .nav-link:hover {
   color: var(--text);
   background-color: var(--background-alt);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+  background: var(--background-alt);
+}
+
+.theme-toggle .moon-icon {
+  display: none;
+}
+
+[data-theme=dark] .theme-toggle .sun-icon {
+  display: none;
+}
+
+[data-theme=dark] .theme-toggle .moon-icon {
+  display: block;
 }
 
 /* Main Content */
@@ -466,6 +518,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.5rem;
+  align-items: start;
 }
 
 .project-card {
@@ -494,7 +547,6 @@ body {
   line-height: 1.6;
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
-  flex-grow: 1;
 }
 
 .project-tech {
@@ -502,6 +554,10 @@ body {
   flex-wrap: wrap;
   gap: 0.4rem;
   margin-bottom: 1.5rem;
+}
+
+.project-tech:last-child {
+  margin-bottom: 0;
 }
 
 .tech-tag {

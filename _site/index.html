@@ -8,13 +8,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Mohammad Ahmadi Sadr | Android Developer Contact: +1 438 454 0470 mohamadahmadisadr@gmail.com Linkedin github</title>
+<title>Mohammad Ahmadi Sadr | Software Developer Contact: +1 438 454 0470 mohamadahmadisadr@gmail.com Linkedin github</title>
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Mohammad Ahmadi Sadr" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Android Developer Contact: +1 438 454 0470 mohamadahmadisadr@gmail.com Linkedin github" />
-<meta property="og:description" content="Android Developer Contact: +1 438 454 0470 mohamadahmadisadr@gmail.com Linkedin github" />
+<meta name="description" content="Software Developer Contact: +1 438 454 0470 mohamadahmadisadr@gmail.com Linkedin github" />
+<meta property="og:description" content="Software Developer Contact: +1 438 454 0470 mohamadahmadisadr@gmail.com Linkedin github" />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Mohammad Ahmadi Sadr" />
@@ -22,19 +29,54 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Mohammad Ahmadi Sadr" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Android Developer Contact: +1 438 454 0470 mohamadahmadisadr@gmail.com Linkedin github","headline":"Mohammad Ahmadi Sadr","name":"Mohammad Ahmadi Sadr","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/profile.png?raw=true"}},"url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Software Developer Contact: +1 438 454 0470 mohamadahmadisadr@gmail.com Linkedin github","headline":"Mohammad Ahmadi Sadr","name":"Mohammad Ahmadi Sadr","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/profile.png?raw=true"}},"url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
+
+  <!-- Firebase Analytics -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+    import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBhVn7oZP05IBWOm-q3qibHJybD6DKpUuk",
+      authDomain: "portfolio-2f595.firebaseapp.com",
+      projectId: "portfolio-2f595",
+      storageBucket: "portfolio-2f595.firebasestorage.app",
+      messagingSenderId: "437232320032",
+      appId: "1:437232320032:web:42d6fc61f2499a1a3f4645",
+      measurementId: "G-WFVCPC3CYP"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    // Make logEvent available globally for our custom tracking in main.js
+    window.firebaseLogEvent = function(eventName, eventParams) {
+      try {
+        logEvent(analytics, eventName, eventParams);
+        console.log(`Firebase Analytics Event logged: ${eventName}`, eventParams);
+      } catch (e) {
+        console.error("Firebase Analytics error:", e);
+      }
+    };
+  </script>
 </head>
 <body>
   <nav class="navbar">
     <div class="nav-container">
       <a href="/" class="nav-logo">Mohammad Ahmadi Sadr</a>
-      <div class="nav-menu">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#contact" class="nav-link">Contact</a>
+      <div class="nav-right">
+        <div class="nav-menu">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
       </div>
     </div>
   </nav>
@@ -44,19 +86,19 @@
   <div class="hero-container">
     <div class="hero-content">
       <div class="hero-text">
-        <h1 class="hero-title">Hi, I'm Mohammad Ahmadi Sadr</h1>
-        <p class="hero-subtitle">Android Developer | Software Developer</p>
-        <p class="hero-location">📍 Ottawa, Ontario | 📞 +1 438-454-0470</p>
+        <h1 class="hero-title">Mohammad Ahmadi Sadr</h1>
+        <p class="hero-subtitle">Software Developer</p>
+        <p class="hero-location">Ottawa, Ontario | +1 438-454-0470 | mohamadahmadisadr@gmail.com</p>
         <p class="hero-description">
-          Android Developer specializing in native Android development using Kotlin, modern architecture patterns, and secure network communication. Experienced in building scalable, maintainable mobile applications with clean architecture, MVVM design patterns, and comprehensive testing. Proficient in Agile development and cross-functional teamwork.
+          Software Developer with 6+ years of experience designing and delivering production-grade applications across mobile and fullstack environments. Proven track record in CI/CD pipeline development, containerization with Docker and Kubernetes, RESTful and GraphQL API integration, and test-driven development. Experienced with React, TypeScript, and modern frontend toolchains. Strong foundation in scalable architecture patterns including MVVM, Clean Architecture, and modular design. Currently expanding into Golang and Ruby on Rails backend development.
         </p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">Get In Touch</a>
-          <a href="https://github.com/mohamadahmadisadr" target="_blank" class="btn btn-outline">View Work</a>
+          <a href="https://sadr.dev" target="_blank" class="btn btn-outline">Portfolio</a>
         </div>
       </div>
       <div class="hero-image-wrapper">
-        <img src="/images/profile.png" alt="Profile" class="hero-avatar" />
+        <img src="/images/profile.png" alt="Mohammad Ahmadi Sadr" class="hero-avatar" />
       </div>
     </div>
   </div>
@@ -64,59 +106,81 @@
 
 <section class="section" id="experience">
   <div class="container">
-    <h2 class="section-title">Experience</h2>
+    <h2 class="section-title">Work Experience</h2>
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
           <div class="timeline-header">
-            <h3>Android Developer | Software Developer</h3>
-            <span class="timeline-date">2022-07 – 2025-07</span>
+            <h3>Software Developer</h3>
+            <span class="timeline-date">Jul 2022 - Jul 2025</span>
           </div>
           <p class="timeline-company">Saman Gostar Ghalam, Tehran, Iran (Remote)</p>
           <ul class="timeline-points">
-            <li>Designed and architected a modular Android application using Kotlin, MVVM, Clean Architecture, Repository Pattern, and Dependency Injection (Hilt) to ensure scalability and maintainability.</li>
-            <li>Developed modern UI components with Jetpack Compose and XML, improving development speed and UI consistency.</li>
-            <li>Implemented reactive state management using Kotlin Coroutines, Flow, and LiveData for responsive and lifecycle-aware applications.</li>
+            <li>Developed and maintained backend services and REST APIs using Python and Django REST Framework, supporting mobile application data layers and internal tooling.</li>
             <li>Built advanced CI/CD pipelines using Jenkins, Gradle, and GitHub Actions, reducing manual release effort and improving deployment reliability.</li>
-            <li>Integrated Room Database and optimized local data storage performance for offline-first features.</li>
             <li>Applied Test-Driven Development (TDD), JUnit, Mockito, and Espresso to increase test coverage and release confidence.</li>
+            <li>Participated in Agile ceremonies, sprint planning, peer code reviews, and release ownership across multiple production versions.</li>
+            <li>Designed and architected a modular application using MVVM, Clean Architecture, Repository Pattern, and Dependency Injection to ensure scalability and maintainability.</li>
+            <li>Applied performance profiling and memory optimization techniques to improve responsiveness and reduce crashes.</li>
+            <li>Implemented reactive state management using Coroutines, Flow, and LiveData for responsive and lifecycle-aware applications.</li>
+            <li>Developed modern UI components improving development speed and UI consistency.</li>
           </ul>
         </div>
       </div>
-      
+
       <div class="timeline-item">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
           <div class="timeline-header">
-            <h3>Android Developer | Software Developer</h3>
-            <span class="timeline-date">2022-03 – 2022-07</span>
+            <h3>Software Developer</h3>
+            <span class="timeline-date">Mar 2022 - Jul 2022</span>
           </div>
           <p class="timeline-company">Vesta, Shiraz, Iran</p>
           <ul class="timeline-points">
-            <li>Implemented MVVM architecture with modular structure to improve maintainability and scalability.</li>
-            <li>Resolved critical production crashes using Firebase Crashlytics, Logcat, and root-cause analysis, improving stability.</li>
+            <li>Developed backend data services using Python and Django to support real estate listing management, property data APIs, and user interaction tracking.</li>
+            <li>Contributed to feature releases, bug fixing, and post-release support in an Agile environment.</li>
             <li>Integrated ARCore into a real estate application, enabling interactive property visualization and increasing user engagement.</li>
-            <li>Built asynchronous features using Kotlin Coroutines for smoother user experience and efficient background processing.</li>
-            <li>Integrated Room Database for local persistence and improved offline data access.</li>
+            <li>Built asynchronous features using Coroutines for smoother user experience and efficient background processing.</li>
+            <li>Implemented local persistence and improved offline data access using embedded database solutions.</li>
           </ul>
         </div>
       </div>
-      
+
       <div class="timeline-item">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
           <div class="timeline-header">
-            <h3>Android Developer | Software Developer</h3>
-            <span class="timeline-date">2020-10 – 2022-03</span>
+            <h3>Software Developer</h3>
+            <span class="timeline-date">Oct 2020 - Mar 2022</span>
           </div>
           <p class="timeline-company">Amoozban.co, Shiraz, Iran</p>
           <ul class="timeline-points">
-            <li>Developed new learning features using Kotlin, Java, MVVM, and REST APIs.</li>
-            <li>Optimized media playback by implementing a custom caching layer for ExoPlayer, reducing bandwidth consumption and buffering time.</li>
-            <li>Integrated speech recognition features to create interactive language-learning experiences.</li>
-            <li>Used Retrofit, OkHttp, and Coroutines for scalable network communication and background operations.</li>
+            <li>Built backend data endpoints using Python and Django to support content delivery, user progress tracking, and learning feature integration.</li>
+            <li>Used scalable networking libraries and async patterns for efficient background operations and API communication.</li>
             <li>Integrated Firebase Analytics, Crashlytics, and Cloud Messaging (FCM) to improve engagement and monitor production quality.</li>
+            <li>Implemented unit tests using JUnit and Mockito, improving code quality and reducing regressions.</li>
+            <li>Collaborated with AdOps and product teams to deliver monetization features and improve revenue performance.</li>
+            <li>Optimized media playback by implementing a custom caching layer, reducing bandwidth consumption and buffering time.</li>
+            <li>Integrated speech recognition features to create interactive language-learning experiences.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Software Developer</h3>
+            <span class="timeline-date">Jul 2019 - Jul 2022</span>
+          </div>
+          <p class="timeline-company">Fars Science and Technology Park</p>
+          <ul class="timeline-points">
+            <li>Developed server-side scripts and backend utilities using Python to automate data processing and support application backend requirements.</li>
+            <li>Built scalable application architectures using MVVM, Clean Code principles, and reusable modular components.</li>
+            <li>Integrated RESTful APIs using JSON parsing for real-time data communication.</li>
+            <li>Implemented local storage solutions using relational and embedded databases.</li>
+            <li>Designed background processing features including scheduled tasks and event-driven components.</li>
           </ul>
         </div>
       </div>
@@ -126,50 +190,42 @@
 
 <section class="section section-alt" id="skills">
   <div class="container">
-    <h2 class="section-title">Skills &amp; Technologies</h2>
+    <h2 class="section-title">Core Skills</h2>
     <div class="skills-grid">
       <div class="skill-card">
-        <h3>Mobile Development</h3>
+        <h3>Languages &amp; Frameworks</h3>
         <div class="skill-tags">
+          <span class="skill-tag">Golang</span>
+          <span class="skill-tag">Ruby</span>
           <span class="skill-tag">Kotlin</span>
           <span class="skill-tag">Java</span>
-          <span class="skill-tag">Flutter</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Django</span>
           <span class="skill-tag">Dart</span>
-          <span class="skill-tag">Jetpack Compose</span>
-          <span class="skill-tag">XML UI</span>
-          <span class="skill-tag">Material Design</span>
           <span class="skill-tag">Swift</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Jetpack Compose</span>
+          <span class="skill-tag">Flutter</span>
         </div>
       </div>
-      
+
       <div class="skill-card">
-        <h3>Android Components &amp; Architecture</h3>
+        <h3>Architecture &amp; Patterns</h3>
         <div class="skill-tags">
-          <span class="skill-tag">Activities &amp; Fragments</span>
-          <span class="skill-tag">Services</span>
-          <span class="skill-tag">Broadcast Receivers</span>
-          <span class="skill-tag">MVVM Architecture</span>
+          <span class="skill-tag">MVVM</span>
+          <span class="skill-tag">MVI</span>
           <span class="skill-tag">Clean Architecture</span>
           <span class="skill-tag">Repository Pattern</span>
           <span class="skill-tag">Modular Architecture</span>
-          <span class="skill-tag">Dependency Injection (Hilt)</span>
+          <span class="skill-tag">Dependency Injection</span>
+          <span class="skill-tag">Hilt</span>
+          <span class="skill-tag">Dagger</span>
+          <span class="skill-tag">Koin</span>
         </div>
       </div>
-      
-      <div class="skill-card">
-        <h3>Async &amp; State Management</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Kotlin Coroutines</span>
-          <span class="skill-tag">Flow</span>
-          <span class="skill-tag">LiveData</span>
-          <span class="skill-tag">StateFlow</span>
-          <span class="skill-tag">SharedFlow</span>
-          <span class="skill-tag">Provider</span>
-          <span class="skill-tag">BLoC</span>
-          <span class="skill-tag">GetX</span>
-        </div>
-      </div>
-      
+
       <div class="skill-card">
         <h3>Backend &amp; APIs</h3>
         <div class="skill-tags">
@@ -178,208 +234,262 @@
           <span class="skill-tag">gRPC</span>
           <span class="skill-tag">OAuth 2.0</span>
           <span class="skill-tag">JWT</span>
+          <span class="skill-tag">Django REST Framework</span>
           <span class="skill-tag">Retrofit</span>
           <span class="skill-tag">OkHttp</span>
+          <span class="skill-tag">Ruby on Rails</span>
         </div>
       </div>
-      
+
+      <div class="skill-card">
+        <h3>CI/CD &amp; DevOps</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Jenkins</span>
+          <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">GitLab CI/CD</span>
+          <span class="skill-tag">Bitrise</span>
+          <span class="skill-tag">Codemagic</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Play Store Console</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Cloud &amp; Firebase</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Firebase Auth</span>
+          <span class="skill-tag">Crashlytics</span>
+          <span class="skill-tag">Analytics</span>
+          <span class="skill-tag">Cloud Messaging</span>
+          <span class="skill-tag">Remote Config</span>
+          <span class="skill-tag">AWS Amplify</span>
+          <span class="skill-tag">Google Cloud Platform</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Networking &amp; Observability</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">IP Networking</span>
+          <span class="skill-tag">TCP/IP</span>
+          <span class="skill-tag">Docker Networking</span>
+          <span class="skill-tag">Elastic Stack</span>
+          <span class="skill-tag">Grafana</span>
+        </div>
+      </div>
+
       <div class="skill-card">
         <h3>Databases &amp; Storage</h3>
         <div class="skill-tags">
-          <span class="skill-tag">Room Database</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MySQL</span>
           <span class="skill-tag">SQLite</span>
+          <span class="skill-tag">Room Database</span>
           <span class="skill-tag">Firebase Firestore</span>
           <span class="skill-tag">Realtime Database</span>
-          <span class="skill-tag">SharedPreferences</span>
           <span class="skill-tag">DataStore</span>
           <span class="skill-tag">Hive</span>
           <span class="skill-tag">SQL</span>
         </div>
       </div>
-      
+
       <div class="skill-card">
-        <h3>Cloud, DevOps &amp; Testing</h3>
+        <h3>Testing &amp; Quality</h3>
         <div class="skill-tags">
-          <span class="skill-tag">Firebase</span>
-          <span class="skill-tag">AWS Amplify</span>
-          <span class="skill-tag">Google Cloud</span>
-          <span class="skill-tag">CI/CD (Jenkins, GitHub Actions)</span>
-          <span class="skill-tag">Docker</span>
           <span class="skill-tag">JUnit</span>
           <span class="skill-tag">Espresso</span>
           <span class="skill-tag">Mockito</span>
+          <span class="skill-tag">Robolectric</span>
+          <span class="skill-tag">Flutter Test</span>
+          <span class="skill-tag">Integration Testing</span>
+          <span class="skill-tag">UI Testing</span>
           <span class="skill-tag">TDD</span>
-          <span class="skill-tag">Play Store Console</span>
+          <span class="skill-tag">Agile/Scrum</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Platform &amp; Runtime</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Coroutines</span>
+          <span class="skill-tag">Flow</span>
+          <span class="skill-tag">LiveData</span>
+          <span class="skill-tag">StateFlow</span>
+          <span class="skill-tag">Services</span>
+          <span class="skill-tag">Broadcast Receivers</span>
+          <span class="skill-tag">ExoPlayer</span>
+          <span class="skill-tag">ARCore</span>
+          <span class="skill-tag">Google Maps SDK</span>
+          <span class="skill-tag">FCM</span>
+          <span class="skill-tag">In-App Purchases</span>
+          <span class="skill-tag">Push Notifications</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Other</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">GitLab</span>
+          <span class="skill-tag">Gerrit</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">NDK/JNI</span>
+          <span class="skill-tag">Payment Gateway Integration</span>
+          <span class="skill-tag">Provider</span>
+          <span class="skill-tag">Riverpod</span>
+          <span class="skill-tag">BLoC</span>
+          <span class="skill-tag">GetX</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="education">
   <div class="container">
     <h2 class="section-title">Education</h2>
     <div class="education-card">
       <h3>Bachelor of Computer Software Engineering</h3>
       <p class="education-school">Azad University</p>
-      <p class="education-date">Feb 2019 – Jul 2022</p>
+      <p class="education-date">Feb 2019 - Jul 2022</p>
       <ul class="education-highlights">
-        <li>Developed strong proficiency in SQL through extensive coursework and practical projects</li>
-        <li>Built a solid foundation in mobile application development with hands-on projects</li>
-        <li>Specialized in Software Engineering and Computer Science fundamentals</li>
+        <li>Developed strong proficiency in SQL through coursework and practical projects.</li>
+        <li>Learned to design relational databases, write complex queries, optimize data retrieval, and manipulate large datasets.</li>
+        <li>Applied database knowledge to support application functionality and business logic.</li>
       </ul>
     </div>
     <div class="education-card">
       <h3>Associate's Degree of Computer Software Engineering</h3>
       <p class="education-school">Azad University</p>
-      <p class="education-date">Sep 2015 – Feb 2019</p>
+      <p class="education-date">Sep 2015 - Feb 2019</p>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section section-alt" id="featured-projects">
   <div class="container">
-    <h2 class="section-title">Featured Projects</h2>
+    <h2 class="section-title">Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <h3>Community Platform Android App</h3>
-        <p class="project-description">
-          Native Android application connecting users with restaurants, cafes, rental properties, jobs, services, and local events. Built a scalable multi-module app using Kotlin, Jetpack Compose, MVVM, Clean Architecture, and Hilt. Developed responsive UI with Material Design 3 and implemented secure login with JWT authentication. Added Room Database and caching for offline support. Built search, filtering, and category discovery features.
-        </p>
+        <h3>504 Essential Words - Web Application</h3>
+        <p class="project-description">React 18, Vite, Firebase, Tailwind CSS, JavaScript</p>
+        <ul class="timeline-points project-points">
+          <li>Built a full-featured vocabulary learning web app with 42 structured lessons covering 504 essential English words, deployed on Firebase Hosting.</li>
+          <li>Implemented gamification features including a points system, progress tracking, and real-time leaderboards using Firebase Firestore.</li>
+          <li>Developed secure authentication with Google OAuth and email/password sign-in using Firebase Authentication.</li>
+          <li>Built interactive learning modes including multiple choice quizzes, British and American audio pronunciations, and video examples.</li>
+          <li>Architected state management with React Context API and built a responsive UI with Tailwind CSS for mobile, tablet, and desktop.</li>
+          <li>Structured the codebase with reusable components, page routing, service layers, and context providers for clean separation of concerns.</li>
+        </ul>
         <div class="project-tech">
-          <span class="tech-tag">Kotlin</span>
-          <span class="tech-tag">Jetpack Compose</span>
-          <span class="tech-tag">MVVM</span>
-          <span class="tech-tag">Clean Architecture</span>
-          <span class="tech-tag">Hilt</span>
-          <span class="tech-tag">Room Database</span>
-          <span class="tech-tag">Retrofit</span>
-          <span class="tech-tag">JUnit</span>
-          <span class="tech-tag">Espresso</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/mohamadahmadisadr" target="_blank" class="btn btn-outline">View Code</a>
+          <span class="tech-tag">React 18</span>
+          <span class="tech-tag">Vite</span>
+          <span class="tech-tag">Firebase</span>
+          <span class="tech-tag">Tailwind CSS</span>
+          <span class="tech-tag">JavaScript</span>
         </div>
       </div>
-      
+
       <div class="project-card">
-        <h3>CallKit - Android Calling Library</h3>
-        <p class="project-description">
-          Native Android calling library focused on real-time communication and clean architecture. Built a production-ready calling library using Kotlin and modern Android development practices. Designed scalable architecture with MVVM, Clean Architecture, and modular structure. Developed responsive UI with Jetpack Compose and reusable components. Implemented real-time features with stream handling, state management, and user interactions.
-        </p>
+        <h3>CallKit</h3>
+        <p class="project-description">Native Android calling library focused on real-time communication and clean architecture.</p>
+        <ul class="timeline-points project-points">
+          <li>Built a calling library using Kotlin and modern Android development practices.</li>
+          <li>Designed scalable architecture with MVVM, Clean Architecture, and modular structure.</li>
+          <li>Developed responsive UI with Jetpack Compose / XML and reusable components.</li>
+          <li>Implemented real-time features such as call flows, state handling, and user actions.</li>
+          <li>Used Coroutines, Flow, Retrofit, and dependency injection for clean asynchronous code.</li>
+          <li>Added testing, debugging, and performance improvements for stable releases.</li>
+        </ul>
         <div class="project-tech">
           <span class="tech-tag">Kotlin</span>
           <span class="tech-tag">Jetpack Compose</span>
+          <span class="tech-tag">XML</span>
           <span class="tech-tag">MVVM</span>
           <span class="tech-tag">Clean Architecture</span>
           <span class="tech-tag">Coroutines</span>
           <span class="tech-tag">Flow</span>
-          <span class="tech-tag">Dependency Injection</span>
-          <span class="tech-tag">Real-time Streams</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/mohamadahmadisadr" target="_blank" class="btn btn-outline">View Code</a>
+          <span class="tech-tag">Retrofit</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section-alt">
-  <div class="container">
-    <h2 class="section-title">Soft Skills</h2>
-    <div class="soft-skills-grid">
-      <div class="soft-skill-item">
-        <h4>Problem-Solving</h4>
-        <p>Analytical thinking and creative solutions to complex technical challenges</p>
-      </div>
-      <div class="soft-skill-item">
-        <h4>Communication</h4>
-        <p>Clear technical communication with team members and stakeholders</p>
-      </div>
-      <div class="soft-skill-item">
-        <h4>Teamwork &amp; Collaboration</h4>
-        <p>Effective collaboration in cross-functional and remote teams</p>
-      </div>
-      <div class="soft-skill-item">
-        <h4>Adaptability</h4>
-        <p>Quick learning and adaptation to new technologies and methodologies</p>
-      </div>
-      <div class="soft-skill-item">
-        <h4>Time Management</h4>
-        <p>Efficient prioritization and delivery of projects within deadlines</p>
-      </div>
-      <div class="soft-skill-item">
-        <h4>Attention to Detail</h4>
-        <p>Meticulous code quality and thorough testing practices</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
+<section class="section" id="certifications">
   <div class="container">
     <h2 class="section-title">Certifications</h2>
     <div class="cert-grid">
+      <div class="cert-card">
+        <h4>Fortinet Certified Associate Cybersecurity</h4>
+        <p class="cert-date">Apr 2026 · Expires Apr 2028</p>
+        <p class="cert-issuer">Fortinet</p>
+        <p class="cert-skills">Cybersecurity, Network Security, Threat Intelligence</p>
+        <a href="https://www.credly.com/badges/a8299b66-7b1d-47e0-b282-0f0c139eae60/linked_in_profile" target="_blank" class="cert-link">Show credential →</a>
+      </div>
+      <div class="cert-card">
+        <h4>Fortinet Certified Fundamentals Cybersecurity</h4>
+        <p class="cert-date">Apr 2026 · Expires Apr 2028</p>
+        <p class="cert-issuer">Fortinet</p>
+        <p class="cert-skills">Cybersecurity Fundamentals, Network Security, Threat Intelligence</p>
+        <a href="https://www.credly.com/badges/a0309762-39fe-4fa1-85ca-b9f39d5d02df/linked_in_profile" target="_blank" class="cert-link">Show credential →</a>
+      </div>
       <div class="cert-card">
         <h4>Agile Foundations</h4>
         <p class="cert-date">Dec 2024</p>
         <p class="cert-issuer">LinkedIn</p>
         <p class="cert-skills">Agile Project Management, Agile Methodologies</p>
-        <a href="https://www.linkedin.com/learning/certificates/c40f4d389e4af14ec3d8f20072da085ab22cb7185b477dfe369d67efc19ff005/" target="_blank" class="cert-link">Show credential →</a>
+        <a href="https://www.linkedin.com/learning/certificates/3831b1836965be2f6d0f8da75c92ba26ecf136696b996e38a39a67440e24ec14/" target="_blank" class="cert-link">Show credential →</a>
       </div>
       <div class="cert-card">
         <h4>Effective Android Testing for Mobile Developers</h4>
         <p class="cert-date">Dec 2024</p>
         <p class="cert-issuer">LinkedIn</p>
         <p class="cert-skills">Mobile Application Development, Android Testing</p>
-        <a href="https://www.linkedin.com/learning/certificates/07e15fd5e2645060cfc16af1366cf3687b2d33935d77807737f81d513e32d74f/" target="_blank" class="cert-link">Show credential →</a>
+        <a href="https://www.linkedin.com/learning/certificates/2e4d07b71328906664d60e7b89700d79730f0f8087799d66005d5d6088d58a12/" target="_blank" class="cert-link">Show credential →</a>
       </div>
       <div class="cert-card">
         <h4>Git for Teams</h4>
         <p class="cert-date">Dec 2024</p>
         <p class="cert-issuer">LinkedIn</p>
         <p class="cert-skills">Git</p>
-        <a href="https://www.linkedin.com/learning/certificates/6422cd516ca51c31a3eca4f93b1608a1197f00f6090dcf6aacf9cc76e7bfc448/" target="_blank" class="cert-link">Show credential →</a>
+        <a href="https://www.linkedin.com/learning/certificates/2887693e5066601f7c3584851f50965e38101660d2d386295ef7f75960098dfc/" target="_blank" class="cert-link">Show credential →</a>
       </div>
       <div class="cert-card">
         <h4>Git Workflows</h4>
         <p class="cert-date">Dec 2024</p>
         <p class="cert-issuer">LinkedIn</p>
         <p class="cert-skills">Workflow Management</p>
-        <a href="https://www.linkedin.com/learning/certificates/0370f4ab7a3fcaac86e63ae3ba6117718a58554cf254138af3d6f0745dfddd24/" target="_blank" class="cert-link">Show credential →</a>
-      </div>
-      <div class="cert-card">
-        <h4>EF SET English Certificate 60/100 (B2 Upper Intermediate)</h4>
-        <p class="cert-date">Nov 2024</p>
-        <p class="cert-issuer">EF SET</p>
-        <a href="https://cert.efset.org/en/9ta7h3" target="_blank" class="cert-link">Show credential →</a>
+        <a href="https://www.linkedin.com/learning/certificates/37397782b6e542ec9a37be417067885b57d6d67b2d354972e3919e83615e060d/" target="_blank" class="cert-link">Show credential →</a>
       </div>
       <div class="cert-card">
         <h4>Career Essentials in Software Development by Microsoft and LinkedIn</h4>
         <p class="cert-date">Dec 2023</p>
         <p class="cert-issuer">Microsoft</p>
         <p class="cert-skills">Programming, Object-Oriented Programming (OOP)</p>
-        <a href="https://www.linkedin.com/learning/certificates/7b0b10ceb3658a82e76a47293d7ff18bacbaa498b69f7e845751e71460ea2065/" target="_blank" class="cert-link">Show credential →</a>
+        <a href="https://www.linkedin.com/learning/certificates/1770e5677e8a9379667f4094b5300a82ba227bf231a2194d85c5a05e5f984288/" target="_blank" class="cert-link">Show credential →</a>
       </div>
       <div class="cert-card">
         <h4>Programming Foundations: Beyond the Fundamentals</h4>
         <p class="cert-date">Dec 2023</p>
         <p class="cert-issuer">LinkedIn</p>
-        <p class="cert-skills">Programming, Object-Oriented Programming (OOP)</p>
+        <p class="cert-skills">Programming, Software Development</p>
         <a href="https://www.linkedin.com/learning/certificates/c3dee0b4b6f529a610460486607a5e0f44d87d440e49b1a53499d1f9c29e9655/" target="_blank" class="cert-link">Show credential →</a>
       </div>
       <div class="cert-card">
         <h4>Programming Foundations: Fundamentals</h4>
         <p class="cert-date">Dec 2023</p>
         <p class="cert-issuer">LinkedIn</p>
-        <p class="cert-skills">Programming, Object-Oriented Programming (OOP)</p>
+        <p class="cert-skills">Programming, Software Development</p>
         <a href="https://www.linkedin.com/learning/certificates/9e6347e7569cec3de360f15b6411a83307952266c54fc125123cc8140479856e/" target="_blank" class="cert-link">Show credential →</a>
       </div>
       <div class="cert-card">
         <h4>Introduction to Career Skills in Software Development</h4>
         <p class="cert-date">Dec 2023</p>
         <p class="cert-issuer">LinkedIn</p>
+        <p class="cert-skills">Software Development, Career Development</p>
         <a href="https://www.linkedin.com/learning/certificates/20d1877463fb32e4041b4094b5300a82ba227bf231a2194d85c5a05e5f984288/" target="_blank" class="cert-link">Show credential →</a>
       </div>
     </div>
