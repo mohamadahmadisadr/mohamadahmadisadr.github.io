@@ -15,7 +15,6 @@ title: Mohammad Ahmadi Sadr
         </p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">Get In Touch</a>
-          <a href="https://sadr.dev" target="_blank" class="btn btn-outline">Portfolio</a>
         </div>
       </div>
       <div class="hero-image-wrapper">
